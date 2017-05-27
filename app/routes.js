@@ -10,7 +10,8 @@ module.exports = route;
 
 // route for our homepage
 route.get('/', function(req, res) {
-    res.render('pages/index', {user:"Thang Pham"});
+    res.render('pages/index', {user:"Thang Pham"}); 
+    //<%= user%>
 });
 
 route.get('/about', function(req, res) {
@@ -20,6 +21,11 @@ route.get('/about', function(req, res) {
 route.get('/contact', function(req, res) {
     res.render('pages/contact');
 });
-route.post('/contact', function(req, res) {
 
+route.get('/portfolio', function(req, res) {
+    res.render('pages/portfolio');
+});
+
+route.get('/portfolio-page', function(req, res) {
+    res.render('pages/portfolio-page');
 });
