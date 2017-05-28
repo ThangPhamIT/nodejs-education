@@ -12,81 +12,124 @@
 
     <title>Tư Vấn Du Học Đại Hải</title>
     <meta name="description" content="Dai Hai Education" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;amp;lang=en" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;amp;lang=en"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" rel="stylesheet">
-
+    <!-- import google icon font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--import materialize.css-->
+    <link href="/styles/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css" />
+    <!--import main.css-->
     <link href="/styles/main.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="/scripts/main.js"></script>
 </head>
 
-<body id="top">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <a href="/contact" id="contact-button" class="mdl-button mdl-button--fab mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast mdl-shadow--4dp">
-            <i class="material-icons">mail</i>
-        </a>
-        
-        <!-- define menu -->
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <span class="mdl-layout__title">TƯ VẤN DU HỌC ĐẠI HẢI</span>
-                <div class="msl-layout-spacer">
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="/">TRANG CHỦ</a>
-                        <a class="mdl-navigation__link" href="/portfolio">PHỤ HUYNH</a>
-                        <a class="mdl-navigation__link" href="/portfolio">GIA SƯ</a>
-                        <a class="mdl-navigation__link" href="/portfolio">LỚP MỚI</a>
-                        <a class="mdl-navigation__link" href="/about">TUYỂN DỤNG</a>
-                        <a class="mdl-navigation__link" href="/contact">LIÊN HỆ</a>
-                    </nav>
-                </div>
-                <div class="msl-layout-spacer">
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="#"><i class="material-icons">search</i></a>
-                        <a class="mdl-navigation__link" href="#"><i class="material-icons">notifications_active</i></a>
-                        <a class="mdl-navigation__link" href="#"><i class="material-icons">call</i></a>
-                        <a class="mdl-navigation__link" href="#"><i class="material-icons">person</i></a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <!-- define menu drawer-->
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout__title">TƯ VẤN DU HỌC</span>
-            <span class="mdl-layout__title">ĐẠI HẢI</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="/">TRANG CHỦ</a>
-                <a class="mdl-navigation__link" href="/portfolio">PHỤ HUYNH</a>
-                <a class="mdl-navigation__link" href="/portfolio">GIA SƯ</a>
-                <a class="mdl-navigation__link" href="/portfolio">LỚP MỚI</a>
-                <a class="mdl-navigation__link" href="/about">TUYỂN DỤNG</a>
-                <a class="mdl-navigation__link" href="/contact">LIÊN HỆ</a>
-            </nav>
-        </div>
+<body>
+    <!-- dropdown menu -->
+    <ul id="dropdown-parents" class="dropdown-content">
+        <li><a href="#!">ĐĂNG KÝ TÌM GIA SƯ</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">PHỤ HUYNH CẦN BIẾT</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">HỌC PHÍ THAM KHẢO</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">DỊCH VỤ GIA SƯ</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">GIA SƯ TIÊU BIỂU</a></li>
+    </ul>
+    <ul id="dropdown-lecturers" class="dropdown-content">
+        <li><a href="#!">ĐĂNG KÝ LÀM GIA SƯ</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">QUY TRÌNH NHẬN LỚP</a></li>
+    </ul>
+    <ul id="dropdown-adminitrator" class="dropdown-content">
+        <li><a href="#!">ĐĂNG NHẬP</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">ĐĂNG XUẤT</a></li>
+    </ul>
 
-        <main class="mdl-layout__content">
+    <!-- dropdown menu mobile-->
+    <ul id="dropdown-parents-mobile" class="dropdown-content">
+        <li><a href="#!">ĐĂNG KÝ TÌM GIA SƯ</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">PHỤ HUYNH CẦN BIẾT</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">HỌC PHÍ THAM KHẢO</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">DỊCH VỤ GIA SƯ</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">GIA SƯ TIÊU BIỂU</a></li>
+    </ul>
+    <ul id="dropdown-lecturers-mobile" class="dropdown-content">
+        <li><a href="#!">ĐĂNG KÝ LÀM GIA SƯ</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">QUY TRÌNH NHẬN LỚP</a></li>
+    </ul>
+    <ul id="dropdown-adminitrator-mobile" class="dropdown-content">
+        <li><a href="#!">ĐĂNG NHẬP</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">ĐĂNG XUẤT</a></li>
+    </ul>
+
+    <!-- menu drawer -->
+        <nav>
+            <div class="nav-wrapper  indigo darken-1">
+                <a href="#!" class="brand-logo"><i class="material-icons md-48">school</i>TƯ VẤN DU HỌC ĐẠI HẢI</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/">TRANG CHỦ</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown-parents">PHỤ HUYNH<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown-lecturers">GIA SƯ<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="/">LỚP MỚI</a></li>
+                    <li><a href="/">TUYỂN DỤNG</a></li>
+                    <li><a href="/">LIÊN HỆ</a></li>
+                    <li><a href="/"><i class="material-icons">search</i></a></li>
+                    <li><a href="/"><i class="material-icons">notifications_active</i></a></li>
+                    <li><a href="/"><i class="material-icons">call</i></a></li>
+                    <li><a href="/"></a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown-adminitrator"><i class="material-icons">person</i></a></li>
+                </ul>
+
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="/">TRANG CHỦ</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown-parents-mobile">PHỤ HUYNH<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown-lecturers-mobile">GIA SƯ<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="/">LỚP MỚI</a></li>
+                    <li><a href="/">TUYỂN DỤNG</a></li>
+                    <li><a href="/">LIÊN HỆ</a></li>
+                    <li><a href="/"><i class="material-icons">search</i>TÌM KIẾM</a></li>
+                    <li><a href="/"><i class="material-icons">notifications_active</i>THÔNG BÁO</a></li>
+                    <li><a href="/"><i class="material-icons">call</i>SKYPE</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown-adminitrator-mobile"><i class="material-icons">person</i>QUẢN TRỊ<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="site-content">
             <!-- define content -->
             <%- body%>
-            
-            <!-- define footer -->
-            <footer class="mdl-mini-footer">
-                <div class="footer-container">
-                    <div class="mdl-logo">&copy; Website Developer: <a href="https://templateflip.com/" target="_blank">Thang Pham - TMA Solutions</a></div>
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="/help">Help</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
+        </div>
+    
+    <!-- define footer -->
+    <!--<footer class="mdl-mini-footer">
+                    <div class="footer-container">
+                        <div class="mdl-logo">&copy; Website Developer: <a href="https://templateflip.com/" target="_blank">Thang Pham - TMA Solutions</a></div>
+                        <ul class="mdl-mini-footer__link-list">
+                            <li><a href="/help">Help</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </footer>-->
 
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/materialize.min.js"></script>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
 
 </body>
 
