@@ -9,14 +9,27 @@ nav .brand-logo {
     font-weight: 400;
     box-sizing: border-box;
     white-space: nowrap;
+    padding: 0px 10px 0px;
 }
 
 #dropdown-parents, #dropdown-lecturers, #dropdown-adminitrator {
-    width: 275px !important;
+    width: 240px !important;
 }
 
 /********************************** content web **********************************/
-.site-content {
-    margin: 1em auto;
-    min-height: 580px;
+.card-introdution-title {
+    color: rgba(0,0,0,.54) !important;
+    font-size: 1rem;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
+}
+
+#home-page-content .collection.with-header .collection-item {
+    padding-left: 10px !important;
+}
+
+#home-page-content-support .collection-item .home-support-title{
+    padding-left: 60px !important;
 }

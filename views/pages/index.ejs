@@ -1,18 +1,168 @@
-<div class="row">
-    <div class="col s12 m12 l12">
-        <div class="card card__panel hoverable">
-            <div class="card-image mdl-card__title">
-                <img src="images/cover.jpg">
-                <span class="card-title">Card Title</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">check_circle</i></a>
-            </div>
-            <div class="card-content mdl-card__content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                    little markup to use effectively.</p>
-            </div>
-            <div class="card-action mdl-card__action">
-              <a href="#">This is a link</a>
+<%- contentFor('body') %>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/1">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/2">
+                        <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/3">
+                        <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/4">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-</div>
+
+    <section>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card hoverable card-introduction-video">
+                    <video class="responsive-video" controls>
+                        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="col s12 m8 l8">
+                <div class="card hoverable grey lighten-5 card-introdution-us">
+                    <div class="card-content">
+                        <span class="card-title card-introduction-title">TƯ VẤN DU HỌC ĐẠI HẢI</span>
+                        <p class="mdl-card-supporting-text">
+                            Các bậc phụ huynh đang băn khoăn không biết làm sao tìm được một gia sư giỏi đáng tin cậy kèm cặp con em mình, giúp con em
+                            mình tiến bộ. Hãy đến với TƯ VẤN DU HỌC ĐẠI HẢI để có được những sự lựa chọn đúng đắn và quyết
+                            định sáng suốt.
+                        </p>
+                        <p class="mdl-card-supporting-text">
+                            Được thành lập với sứ mệnh mang lại niềm hạnh phúc cho quý gia đình trước sự tiến bộ của con em mình trong học tập, gia sư
+                            TP/HCM với đội ngũ gia sư gia đình chất lượng trong thời gian qua đã tận tình dìu dắt các em
+                            học sinh vượt qua khó khăn ban đầu, vươn lên học giỏi và dành được kết quả cao trong học tập.
+                        </p>
+                        <p class="mdl-card-supporting-text">
+                            <h6>Chúng tôi luôn đông hành cùng con bạn thành công!</h6>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row" id="home-page-content">
+        <div class="col s12 m2 l2">
+            <ul class="collection with-header">
+                <li class="collection-header center-align purple darken-3 white-text">
+                    <h6>PHỤ HUYNH</h6>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Đăng ký tìm gia sư</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Phụ huynh cần biết</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Học phí tham khảo</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Dịch vụ gia sư</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Gia sư tiêu biểu</div>
+                </li>
+            </ul>
+            <ul class="collection with-header" id="home-page-content-support">
+                <li class="collection-header center-align indigo darken-3 white-text">
+                    <h6>THÔNG TIN HỖ TRỢ</h6>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
+                    <span class="title home-support-title">0123456789</span>
+                    <p class="home-support-title">(Thang Pham)</p>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
+                    <span class="title home-support-title">0123456789</span>
+                    <p class="home-support-title">(Thang Pham)</p>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
+                    <span class="title home-support-title">0123456789</span>
+                    <p class="home-support-title">(Thang Pham)</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12 m8 l8">
+            <ul class="collection with-header">
+                <li class="collection-header center-align light-blue darken-3 white-text">
+                    <h6>content</h6>
+                </li>   
+            </ul>
+        </div>
+        <div class="col s12 m2 l2">
+            <ul class="collection with-header">
+                <li class="collection-header center-align green darken-3 white-text">
+                    <h6>GIA SƯ</h6>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons green-text text-lighten-3">check_circle</i> Đăng ký làm gia sư</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons green-text text-lighten-3">check_circle</i> Quy trình nhận lớp</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons green-text text-lighten-3">check_circle</i> Mức phí gia sư</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons green-text text-lighten-3">check_circle</i> Thông báo</div>
+                </li>
+            </ul>
+
+            <ul class="collection with-header">
+                <li class="collection-header center-align orange darken-3 white-text">
+                    <h6>GIA SƯ CÁC MÔN</h6>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Toán</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Lý</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Hóa</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Sinh</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Anh</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Văn</div>
+                </li>
+            </ul>
+        </div>
+    </div>
