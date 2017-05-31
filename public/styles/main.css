@@ -16,7 +16,7 @@ nav .brand-logo {
     width: 240px !important;
 }
 
-/********************************** content web **********************************/
+/********************************** home page **********************************/
 .card-introdution-title {
     color: rgba(0,0,0,.54) !important;
     font-size: 1rem;
@@ -32,4 +32,9 @@ nav .brand-logo {
 
 #home-page-content-support .collection-item .home-support-title{
     padding-left: 60px !important;
+}
+
+/********************************** tuition page **********************************/
+.tuition-price-table thead th, .tuition-price-table tbody tr td{
+    border: 1px #2e7d32 solid;
 }

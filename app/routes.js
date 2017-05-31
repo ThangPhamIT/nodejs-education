@@ -29,3 +29,7 @@ route.get('/portfolio', function(req, res) {
 route.get('/portfolio-page', function(req, res) {
     res.render('pages/portfolio-page');
 });
+
+route.get('/tuition-price', function(req, res) {
+    res.render('pages/tuition-price');
+});
