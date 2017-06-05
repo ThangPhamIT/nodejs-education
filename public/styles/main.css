@@ -35,6 +35,12 @@ nav .brand-logo {
 }
 
 /********************************** tuition page **********************************/
-.tuition-price-table thead th, .tuition-price-table tbody tr td{
-    border: 1px #2e7d32 solid;
+.tuition-price-table-1 thead th, .tuition-price-table-1 tbody tr td{
+    border: 1px #004d40 solid;
+    padding: 10px 5px;
+}
+
+.tuition-price-table-2 thead th, .tuition-price-table-2 tbody tr td {
+    border: 1px #bf360c solid;
+    padding: 10px 5px;
 }

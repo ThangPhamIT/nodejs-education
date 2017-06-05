@@ -31,5 +31,9 @@ route.get('/portfolio-page', function(req, res) {
 });
 
 route.get('/tuition-price', function(req, res) {
-    res.render('pages/tuition-price');
+    res.render('pages/parents/tuition-price');
+});
+
+route.get('/register-lecturer', function(req, res) {
+    res.render('pages/parents/register-lecturer');
 });
