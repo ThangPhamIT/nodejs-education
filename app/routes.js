@@ -1,6 +1,6 @@
 // require express
 var express = require('express');
-var path    = require('path');
+var path = require('path');
 
 // create our route object
 var route = express.Router();
@@ -8,32 +8,52 @@ var route = express.Router();
 //export our router
 module.exports = route;
 
-// route for our homepage
-route.get('/', function(req, res) {
-    res.render('pages/index', {user:"Thang Pham"}); 
-    //<%= user%>
-});
+// model
+var images = [
+    { id: 1, url: 'images/home.png' },
+    { id: 2, url: 'images/about.jpg' },
+    { id: 3, url: 'images/contact.jpg' }
+];
 
-route.get('/about', function(req, res) {
-    res.render('pages/about');
-});
+var Image = {
+    findAll: function () {
+        return images;
+    }
+};
 
-route.get('/contact', function(req, res) {
-    res.render('pages/contact');
-});
+var homeController = {
+    index: function (req, res) {
+        res.render('pages/index', {
+            user: "Thang Pham",
+            message: "I am web developer",
+            images: Image.findAll()
+        });
+    }
+};
 
-route.get('/portfolio', function(req, res) {
-    res.render('pages/portfolio');
-});
+var contactController = {
+    index: function (req, res) {
+        res.render('pages/contact');
+    }
+}
 
-route.get('/portfolio-page', function(req, res) {
-    res.render('pages/portfolio-page');
-});
+var tuitionPriceController = {
+    index: function(req, res){
+        res.render('pages/parents/tuition-price');
+    }
+}
 
-route.get('/tuition-price', function(req, res) {
-    res.render('pages/parents/tuition-price');
-});
+var registerLecturerController = {
+    index: function(req, res){
+        res.render('pages/parents/register-lecturer');
+    }
+}
 
-route.get('/register-lecturer', function(req, res) {
-    res.render('pages/parents/register-lecturer');
-});
+// route and controller
+route.get('/', homeController.index);
+
+route.get('/contact', contactController.index);
+
+route.get('/tuition-price', tuitionPriceController.index);
+
+route.get('/register-lecturer', registerLecturerController.index);

@@ -118,8 +118,14 @@
         <div class="col s12 m8 l8">
             <ul class="collection with-header">
                 <li class="collection-header center-align light-blue darken-3 white-text">
-                    <h6>content</h6>
+                    <h6>content</h6>    
                 </li>   
+                <li><h6><%= user%></h6></li>
+                <li><h6><%= message%></h6></li>
+                <% images.forEach(function(img){ %>
+                    <li><h6><img src="<%= img.url%>"/></h6></li>
+                <% }); %>
+                
             </ul>
         </div>
         <div class="col s12 m2 l2">
