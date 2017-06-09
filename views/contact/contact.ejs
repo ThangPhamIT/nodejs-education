@@ -1,0 +1,56 @@
+<%- contentFor('body') %>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="alert alert-success">
+                <%= message %>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/contact.jpg">
+                    <span class="card-title">LIÊN HỆ VỚI CHÚNG TÔI</span>
+                </div>
+                <form action="/contact" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input class="validate" id="full_name" name="full_name" type="text" required>
+                            <label for="full_name">Họ tên</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">location_on</i>
+                            <input class="validate" id="address" name="address" type="text" required>
+                            <label for="address">Địa chỉ</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phone" name="phone" type="number" class="validate" pattern="[0-9, ]*" maxlength="11" required>
+                            <label for="phone" data-error="Số điện thoại không đúng">Điện thoại</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" name="email" type="email" class="validate" required>
+                            <label for="email" data-error="Vui lòng nhập đúng định dạng email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 m12 l12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                            <label for="message">Yêu cầu khác</label>
+                        </div>
+                    </div>
+                    <p>
+                        <button class="btn waves-effect waves-light right" type="submit" name="action">
+                            GỞI THÔNG TIN
+                        </button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>

@@ -44,3 +44,8 @@ nav .brand-logo {
     border: 1px #bf360c solid;
     padding: 10px 5px;
 }
+
+/********************************** footer **********************************/
+.page-footer {
+    background-color: #3949ab !important;
+}

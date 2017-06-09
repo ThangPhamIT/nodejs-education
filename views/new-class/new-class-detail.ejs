@@ -1,0 +1,148 @@
+<%- contentFor('body') %>
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../images/contact.jpg" border="0">
+                    <span class="card-title">THÔNG TIN CHI TIẾT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="home-page-content">
+        <div class="col s12 m2 l2">
+            <ul class="collection with-header">
+                <li class="collection-header center-align purple darken-3 white-text">
+                    <h6>PHỤ HUYNH</h6>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Lưu ý khi chọn gia sư cho con em</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Tầm quan trọng của việc chọn đúng
+                        gia sư</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Những điều phụ huynh nên biết khi
+                        thuê gia sư</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Bồi dưỡng kiến thức cho con em</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Dạy kèm tại nhà</div>
+                </li>
+            </ul>
+            <ul class="collection with-header" id="home-page-content-support">
+                <li class="collection-header center-align indigo darken-3 white-text">
+                    <h6>THÔNG TIN HỖ TRỢ</h6>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
+                    <span class="title home-support-title">0123456789</span>
+                    <p class="home-support-title">(Thang Pham)</p>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
+                    <span class="title home-support-title">0123456789</span>
+                    <p class="home-support-title">(Thang Pham)</p>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
+                    <span class="title home-support-title">0123456789</span>
+                    <p class="home-support-title">(Thang Pham)</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col s12 m8 l8">
+            <ul class="collection with-header">
+                <li class="collection-header center-align light-blue darken-3 white-text">
+                    <h6>THÔNG TIN CHI TIẾT</h6>
+                </li>
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">
+                            <% if(classInfo.status == 0){ %>
+                                LỚP CHƯA GIAO
+                            <% }else{ %>
+                                LỚP ĐÃ GIAO
+                            <% } %>
+                        </span>
+                        <p>Môn dạy: <%= classInfo.subject_name %></p>
+                        <p>Lớp dạy: <%= classInfo.class_name %></p>
+                        <p>Địa chỉ: <%= classInfo.address %></p>
+                        <p>Mức lương: <%= classInfo.salary %></p>
+                        <p>Số buổi: <%= classInfo.number_of_time %> buổi/tuần</p>
+                        <p>Thời gian: <%= classInfo.study_time %></p>
+                        <p>Yêu cầu: <%= classInfo.require %></p>
+                        <p>Mức lương: <%= classInfo.salary %></p>
+                        <p>Liên hệ: <%= classInfo.contact %></p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">
+                            <% if(classInfo.status == 0){ %>
+                                ĐĂNG KÝ NGAY
+                            <% }else{ %>
+                                XEM CHI TIẾT
+                            <% } %>
+                        </a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="col s12 m2 l2">
+            <ul class="collection with-header">
+                <li class="collection-header center-align orange darken-3 white-text">
+                    <h6>GIA SƯ CÁC MÔN</h6>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Toán</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Lý</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Hóa</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Sinh</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Anh</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Văn</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Luyện thi Đại Học</div>
+                </li>
+            </ul>
+
+            <ul class="collection with-header">
+                <li class="collection-header center-align green darken-3 white-text">
+                    <h6>TIN TỨC NỔI BẬT</h6>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Giáo viên muốn môn Toán 'học gì thi nấy,
+                        không đánh đố'</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Nữ sinh Việt đạt điểm tuyệt đối kỳ thi
+                        chuẩn hóa SAT</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Nữ sinh được 8 trường danh tiếng mời nhập
+                        học</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Nam sinh trường Luật đạt điểm TOEIC tuyệt
+                        đối</div>
+                </li>
+                <li class="collection-item">
+                    <div><i class="material-icons orange-text text-lighten-3">info</i> Sử dụng chung hệ thống phần mềm quản lý
+                        thi THPT quốc gia</div>
+                </li>
+            </ul>
+        </div>
+    </div>
