@@ -9,9 +9,9 @@ var controller = require('./controllers/index');
 
 // route
 route.get('/', controller.home.index);
-route.get('/new-class', controller.newClass.index);
-route.get('/new-class/:id', controller.newClass.detailClass);
-route.get('/contact', controller.contact.index);
-route.post('/contact', controller.contact.sendEmailToEducation)
-route.get('/tuition-price', controller.tuitionPrice.index);
-route.get('/register-lecturer', controller.registerLecturer.index);
+route.get('/lop-moi', controller.newClass.index);
+route.get('/lop-moi/:id', controller.newClass.detailClass);
+route.get('/lien-he', controller.contact.index);
+route.post('/lien-he', controller.contact.sendEmailToEducation)
+route.get('/hoc-phi-tham-khao', controller.tuitionPrice.index);
+route.get('/dang-ky-tim-gia-su', controller.registerLecturer.index);

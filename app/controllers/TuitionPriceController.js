@@ -1,6 +1,6 @@
 var tuitionPriceController = {
     index: function(req, res){
-        res.render('parents/tuition-price');
+        res.render('parents/hoc-phi-tham-khao');
     }
 }
 

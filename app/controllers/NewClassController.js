@@ -2,7 +2,7 @@ var Class = require('../models/Class');
 
 var newClassController = {
     index: function (req, res) {
-        res.render('new-class/new-class', {
+        res.render('new-class/lop-moi', {
             classes: Class.findAll()
         });
     },
@@ -16,7 +16,7 @@ var newClassController = {
                 break;
             }
         }
-        res.render('new-class/new-class-detail', {
+        res.render('new-class/chi-tiet-lop-moi', {
             classInfo: classInfo
         })
     }

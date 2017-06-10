@@ -1,6 +1,6 @@
 var contactController = {
     index: function (req, res) {
-        res.render('contact/contact', {
+        res.render('contact/lien-he', {
             message: ''
         });
     },
@@ -13,7 +13,7 @@ var contactController = {
         } else {
             message: "ok!"
         }
-        res.render('contact/contact', {
+        res.render('contact/lien-he', {
             detailMessage: message
         })
     }

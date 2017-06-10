@@ -1,6 +1,6 @@
 var registerLecturerController = {
     index: function(req, res){
-        res.render('parents/register-lecturer');
+        res.render('parents/dang-ky-tim-gia-su');
     }
 }
 

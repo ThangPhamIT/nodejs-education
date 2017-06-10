@@ -15,38 +15,38 @@
         <div class="col s8 m6 l6">
             <form action="https://formspree.io/email@example.com" method="POST">
                 <div class="row">
-                    <div class="input-field col s12 m6 l6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input class="validate" id="full_name" type="text" pattern="[A-Z,a-z, ]*">
-                        <label for="full_name" data-error="Vui lòng nhập chữ cái">Họ tên</label>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input class="validate" id="full_name" name="full_name" type="text" required>
+                            <label for="full_name">Họ tên</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">location_on</i>
+                            <input class="validate" id="address" name="address" type="text" required>
+                            <label for="address">Địa chỉ</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 m6 l6">
-                        <i class="material-icons prefix">location_on</i>
-                        <input class="validate" id="address" type="text">
-                        <label for="address">Địa chỉ</label>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="input-field col s12 m6 l6">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="phone" type="number" class="validate" pattern="[0-9, ]*" maxlength="11">
-                        <label for="phone" data-error="Số điện thoại không đúng">Điện thoại</label>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phone" name="phone" type="number" class="validate" pattern="[0-9, ]*" maxlength="11" required>
+                            <label for="phone" data-error="Số điện thoại không đúng">Điện thoại</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" name="email" type="email" class="validate" required>
+                            <label for="email" data-error="Vui lòng nhập đúng định dạng email">Email</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 m6 l6">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email" data-error="Vui lòng nhập đúng định dạng email">Email</label>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">album</i>
-                        <input id="classes" type="text">
+                        <input id="classes" name="classes" type="text">
                         <label for="classes">Môn học</label>
                     </div>
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">featured_play_list</i>
-                        <input id="number_student" type="number">
+                        <input id="number_student" name="number_student" type="number" class="validate" pattern="[0-9, ]*">
                         <label for="number_student">Số lượng học sinh</label>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                 <div class="row">
                     <div class="input-field col s12 m12 l12">
                         <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <textarea id="message" name="message" class="materialize-textarea"></textarea>
                         <label for="message">Yêu cầu khác</label>
                     </div>
                 </div>
