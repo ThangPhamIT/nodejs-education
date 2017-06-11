@@ -15,3 +15,4 @@ route.get('/lien-he', controller.contact.index);
 route.post('/lien-he', controller.contact.sendEmailToEducation)
 route.get('/hoc-phi-tham-khao', controller.tuitionPrice.index);
 route.get('/dang-ky-tim-gia-su', controller.registerLecturer.index);
+route.post('/dang-ky-tim-gia-su', controller.registerLecturer.sendEmailToEducation);
