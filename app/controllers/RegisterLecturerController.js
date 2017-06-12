@@ -1,5 +1,5 @@
 var nodemailer = require('nodemailer');
-var token      = require('../authorization/XOAuth2');
+var token      = require('../../authorization/XOAuth2');
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -30,15 +30,17 @@ var registerLecturerController = {
         var number_of_time = req.body.number_of_time;
         var message = req.body.message;
 
+        var messageInfo = (message == '') ? 'Không có' : message;
         var classes = "";
-        for(var i = 0; i < option_class.length; i++) {
-            classes += option_class[i];
-            if(i < (option_class.length - 1) ){
-                classes += ', ';
+        if(option_class.length > 0){
+            for(var i = 0; i < option_class.length; i++){
+                classes += option_class[i];
+                if(i < (option_class.length - 1) ){
+                    classes += ', ';
+                }
             }
         }
-        var messageInfo = (message == '') ? 'Không có' : message;
-
+        
         var mailOptions = {
             from: full_name + '<' + email + '>',
             to: 'thangpham.it92@gmail.com',
@@ -62,7 +64,6 @@ var registerLecturerController = {
             }
             console.log('Message sent: ' + info.response);
         });
-
         res.render('parents/dang-ky-tim-gia-su');
     }
 }
