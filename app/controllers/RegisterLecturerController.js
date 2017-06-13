@@ -32,7 +32,7 @@ var registerLecturerController = {
 
         var messageInfo = (message == '') ? 'Không có' : message;
         var classes = "";
-        if(option_class.length > 0){
+        if(option_class != null && option_class.length > 0){
             for(var i = 0; i < option_class.length; i++){
                 classes += option_class[i];
                 if(i < (option_class.length - 1) ){
@@ -60,11 +60,34 @@ var registerLecturerController = {
         // send mail with defined transport object
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
-                return console.log('Error: ' + error);
+                res.render('modals/dang-ky-tim-gia-su-modal', {
+                    flash: {
+                        type: 'error',
+                        title: 'ĐĂNG KÝ TÌM GIA SƯ THẤT BẠI',
+                        message: 'Bạn vui lòng liên lạc trực tiếp với trung tâm <b>TƯ VẤN DU HỌC ĐẠI HẢI</b>.' +
+                                 '<br>' +
+                                 'Liên hệ và ghi danh tại Văn phòng trụ sở chính: ' +
+                                 '<br>' +
+                                 '<b>18/64A, KDC Đại Hải, Ấp 7, xã Xuân Thới Thượng, huyện Hóc Môn, HCM.</b>' + 
+                                 '<br>' +
+                                 '<b>Số điện thoại</b>: 0862.50.55.22 hoặc 0914.787.008 (Thầy Nam).' + 
+                                 '<br>' +
+                                 '<b>Email</b>: tuvanduhocdaihai@gmail.com'
+                    }
+                });
+            } else {
+                res.render('modals/dang-ky-tim-gia-su-modal', {
+                    flash: {
+                        type: 'success',
+                        title: 'ĐĂNG KÝ TÌM GIA SƯ THÀNH CÔNG',
+                        message: 'Cảm ơn bạn đã liên lạc với trung tâm <b>TƯ VẤN DU HỌC ĐẠI HẢI</b>.' + 
+                                '<br>' +
+                                'Chúng tôi sẽ liên lạc với bạn trong thời gian sớm nhất!'
+                    }
+                });
             }
-            console.log('Message sent: ' + info.response);
+            
         });
-        res.render('parents/dang-ky-tim-gia-su');
     }
 }
 
