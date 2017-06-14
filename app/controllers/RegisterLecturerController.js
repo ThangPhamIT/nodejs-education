@@ -86,7 +86,6 @@ var registerLecturerController = {
                     }
                 });
             }
-            
         });
     }
 }
