@@ -62,15 +62,30 @@
                 </li>
                 <% classes.forEach(function(item){ %>
                     <div class="col s12 m6 l6">
-                        <div class="card blue-grey darken-1">
-                            <div class="card-content white-text">
-                                <span class="card-title">
+                        <div class="card grey lighten-4">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/portfolio4.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">
                                     <% if(item.status == 0){ %>
                                         LỚP CHƯA GIAO
                                     <% }else{ %>
                                         LỚP ĐÃ GIAO
-                                    <% } %>
+                                    <% } %> 
+                                    <i class="material-icons right">more_vert</i>
                                 </span>
+                                <p>Môn dạy: <%= item.subject_name %></p>
+                                <p>Lớp dạy: <%= item.class_name %></p>
+                            </div>
+                            <div class="card-reveal" style="background-image: url('../images/background1.jpg')">
+                                <span class="card-title grey-text text-darken-4">
+                                    <% if(item.status == 0){ %>
+                                        LỚP CHƯA GIAO
+                                    <% }else{ %>
+                                        LỚP ĐÃ GIAO
+                                    <% } %> 
+                                <i class="material-icons right">close</i></span>
                                 <p>Môn dạy: <%= item.subject_name %></p>
                                 <p>Lớp dạy: <%= item.class_name %></p>
                                 <p>Địa chỉ: <%= item.address %></p>
@@ -92,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <% }); %>
+                <% }); %>
 
             </ul>
         </div>

@@ -4,5 +4,6 @@ module.exports = {
     contact: require('./ContactController'),
     parentKnow: require('./ParentKnowController'),
     tuitionPrice: require('./TuitionPriceController'),
-    registerLecturer: require('./RegisterLecturerController')
+    registerLecturer: require('./RegisterLecturerController'),
+    serviceLecturer: require('./ServiceLecturerController')
 }
