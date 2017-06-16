@@ -61,7 +61,7 @@
                     <h6>THÔNG TIN CHI TIẾT</h6>
                 </li>
             </ul>
-            <div class="">
+            <div>
                 <h5 class="header card-title">
                     <% if(classInfo.status == 0){ %>
                         LỚP CHƯA GIAO
@@ -69,21 +69,48 @@
                         LỚP ĐÃ GIAO
                     <% } %>
                 </h6>
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img height="100%" src="../images/portfolio4.jpg">
+                <div class="card horizontal green-boder-item s12 m12 l12">
+                    <div class="card-image s12 m12 l4">
+                        <img height="100%" width="200px" src="../images/portfolio4.jpg">
                   </div>
-                  <div class="card-stacked">
+                  <div class="card-stacked s12 m12 l8">
                         <div class="card-content">
-                            <p>Môn dạy: <%= classInfo.subject_name %></p>
-                            <p>Lớp dạy: <%= classInfo.class_name %></p>
-                            <p>Địa chỉ: <%= classInfo.address %></p>
-                            <p>Mức lương: <%= classInfo.salary %></p>
-                            <p>Số buổi: <%= classInfo.number_of_time %> buổi/tuần</p>
-                            <p>Thời gian: <%= classInfo.study_time %></p>
-                            <p>Yêu cầu: <%= classInfo.require %></p>
-                            <p>Mức lương: <%= classInfo.salary %></p>
-                            <p>Liên hệ: <%= classInfo.contact %></p>
+                            <table class="striped detail-class-table">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 25%">- Môn dạy</td>
+                                        <td><%= classInfo.subject_name %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Lớp dạy</td>
+                                        <td><%= classInfo.class_name %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Địa chỉ</td>
+                                        <td><%= classInfo.address %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Mức lương</td>
+                                        <td><%= classInfo.salary %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Số buổi</td>
+                                        <td><%= classInfo.number_of_time %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Thời gian</td>
+                                        <td><%= classInfo.study_time %></td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Yêu cầu </td>
+                                        <td><%= classInfo.require %></td>
+                                    </tr>
+                                     <tr>
+                                        <td>- Liên hệ</td>
+                                        <td><%= classInfo.contact %></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="card-action">
                             <a href="#">

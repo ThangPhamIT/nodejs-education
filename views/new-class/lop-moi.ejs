@@ -75,26 +75,42 @@
                                     <% } %> 
                                     <i class="material-icons right">more_vert</i>
                                 </span>
-                                <p>Môn dạy: <%= item.subject_name %></p>
-                                <p>Lớp dạy: <%= item.class_name %></p>
+                                <p>Môn dạy:
+                                    <%= item.subject_name %>
+                                </p>
+                                <p>Lớp dạy:
+                                    <%= item.class_name %>
+                                </p>
                             </div>
                             <div class="card-reveal" style="background-image: url('../images/background1.jpg')">
-                                <span class="card-title grey-text text-darken-4">
+                                <span class="card-title white-text text-darken-4">
                                     <% if(item.status == 0){ %>
                                         LỚP CHƯA GIAO
                                     <% }else{ %>
                                         LỚP ĐÃ GIAO
                                     <% } %> 
-                                <i class="material-icons right">close</i></span>
-                                <p>Môn dạy: <%= item.subject_name %></p>
-                                <p>Lớp dạy: <%= item.class_name %></p>
-                                <p>Địa chỉ: <%= item.address %></p>
-                                <p>Mức lương: <%= item.salary %></p>
-                                <p>Số buổi: <%= item.number_of_time %> buổi/tuần</p>
-                                <p>Thời gian: <%= item.study_time %></p>
-                                <p>Yêu cầu: <%= item.require %></p>
-                                <p>Mức lương: <%= item.salary %></p>
-                                <p>Liên hệ: <%= item.contact %></p>
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <table class="striped blue-text text-darken-4">
+                                    <tbody class="collection-item">
+                                        <tr>
+                                            <td>Môn dạy</td>
+                                            <td><%= item.subject_name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lớp dạy</td>
+                                            <td><%= item.class_name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Địa chỉ</td>
+                                            <td><%= item.address %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thời gian</td>
+                                            <td><%= item.study_time %></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <div class="card-action">
                                 <a href="/lop-moi/<%= item.id %>">
@@ -107,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                <% }); %>
+                    <% }); %>
 
             </ul>
         </div>
@@ -153,11 +169,13 @@
                 </li>
                 <li class="collection-item">
                     <div><i class="material-icons orange-text text-lighten-3">info</i> Nữ sinh được 8 trường danh tiếng mời nhập
-                        học</div>
+                        học
+                    </div>
                 </li>
                 <li class="collection-item">
                     <div><i class="material-icons orange-text text-lighten-3">info</i> Nam sinh trường Luật đạt điểm TOEIC tuyệt
-                        đối</div>
+                        đối
+                    </div>
                 </li>
                 <li class="collection-item">
                     <div><i class="material-icons orange-text text-lighten-3">info</i> Sử dụng chung hệ thống phần mềm quản lý

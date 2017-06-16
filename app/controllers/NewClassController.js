@@ -7,13 +7,15 @@ var newClassController = {
         });
     },
 
-    detailClass: function(req, res) {
+    detailClass: function (req, res) {
         var classInfo;
         var classes = Class.findAll();
-        for(var i = 0; i < classes.length; i++){
-            if(classes[i].id == req.params.id){
-                classInfo = classes[i];
-                break;
+        if (classes != null && classes.length > 0) {
+            for (var i = 0; i < classes.length; i++) {
+                if (classes[i].id == req.params.id) {
+                    classInfo = classes[i];
+                    break;
+                }
             }
         }
         res.render('new-class/chi-tiet-lop-moi', {

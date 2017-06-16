@@ -13,6 +13,7 @@ app.use('/', router);
 
 //set static files (scc, img, ...) location
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app/upload')));
 
 // start the server
 app.listen(port, function(){

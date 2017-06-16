@@ -17,10 +17,8 @@ route.get('/lien-he', controller.contact.index);
 route.post('/lien-he', controller.contact.sendEmailToEducation)
 
 route.get('/hoc-phi-tham-khao', controller.tuitionPrice.index);
-
 route.get('/phu-huynh-can-biet', controller.parentKnow.index);
-
 route.get('/dich-vu-gia-su', controller.serviceLecturer.index);
-
 route.get('/dang-ky-tim-gia-su', controller.registerLecturer.index);
 route.post('/dang-ky-tim-gia-su', controller.registerLecturer.sendEmailToEducation);
+route.get('/gia-su-tieu-bieu', controller.lecturer.index);

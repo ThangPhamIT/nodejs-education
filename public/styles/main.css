@@ -39,8 +39,54 @@ nav .brand-logo {
     padding-left: 60px !important;
 }
 
+/********************************** parents **********************************/
+/*lecture*/
+.lect-green-border-item {
+    border: 1px solid #93bd4f;
+}
+
+.lect-green-border-item > .lect-info {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.lect-image {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    border: 1px solid #93bd4f; 
+    margin: 5px 0 0 -5px;
+}
+
+.lect-id{
+    color: #ed1c24;
+}
+
+.lect-info {
+    color: #397704;
+}
+
+.detail-class-table tbody tr td {
+    padding: 3px 0px;
+}
+
+/********************************** new class **********************************/
+.bg-item-new-class {
+    background-image: url('../images/background1.jpg') no-repeat cover center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.green-boder-item {
+    border: 1px solid #93bd4f;
+}
+
 /********************************** tuition page **********************************/
-.tuition-price-table-1 thead th, .tuition-price-table-1 tbody tr td{
+.tuition-price-table-1 thead th, .tuition-price-table-1 tbody tr td {
     border: 1px #004d40 solid;
     padding: 10px 5px;
 }
