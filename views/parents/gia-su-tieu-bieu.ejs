@@ -64,18 +64,51 @@
                     <div class="col s12 m6 l6">
                         <div class="card lect-green-border-item">
                             <div class="row lect-info">
-                                <div class="col s3 m3 l3">
+                                <div class="col s3 m12 l3">
                                     <img class="lect-image" src="<%= item.image %>">
                                 </div>
-                                <div class="col s9 m9 l9">
-                                    Mã số: <strong class="lect-id"> <%= item.id %> </strong> <br>
-                                    Gia sư: <strong class="lect-info"> <%= item.full_name %> </strong> <br>
-                                    Hiện là: <span class="lect-info"> <%= item.job %> </span> <br>
+                                <div class="col s9 m12 l9">
+                                    Mã số: <strong class="red-text"> <%= item.id %> </strong> <br>
+                                    Gia sư: <strong class="lect-info-text"> <%= item.full_name %> </strong> <br>
+                                    Hiện là: <span class="lect-info-text"> <%= item.job %> </span> <br>
                                 </div>
                             </div>
-                            <div class="row">
-                                Mã số: <strong class="lect-id"> <%= item.id %> </strong> <br>
-                                Gia sư: <strong class="lect-info"> <%= item.full_name %> </strong> <br>
+                            <div class="row" style="padding-left: 5px">
+                                <table class="striped detail-class-table">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width: 30%">- Trường</td>
+                                            <td><%= item.education_name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Chuyên ngành</td>
+                                            <td><%= item.major_name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Nhận dạy</td>
+                                            <td><%= item.class_name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Các môn</td>
+                                            <td><%= item.subject_name %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Khu vực</td>
+                                            <td><%= item.area %></td>
+                                        </tr>
+                                        <tr>
+                                            <td>- Mức lương</td>
+                                            <td><strong class="red-text"><%= item.salary %></strong> đ/ buổi</td>
+                                        </tr>
+                                         <tr>
+                                            <td>- Liên hệ</td>
+                                            <td><strong class="red-text"><%= item.phone %></strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row center-align">
+                                <a class="waves-effect waves-light btn green darken-3">CHỌN GIA SƯ</a>
                             </div>
                         </div>
                     </div>

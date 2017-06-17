@@ -13,7 +13,7 @@ var lecturers = [
       education_name: 'Đại học Sư Phạm Kỹ Thuật Hồ Chí Minh',
       major_name: 'IT software',
       subject_name: 'Toán, Lý, Hóa, Sinh',
-      class_name: ' Lớp 3, Lớp 4, Lớp 5, Lớp 6, Lớp 7, Lớp 8, Lớp 9',
+      class_name: ' Lớp 3, Lớp 4, Lớp 5, Lớp 6',
       area: ' Quận 12, Tân Bình, Tân Phú, Bình Tân, Bình Chánh, Hóc Môn',
       salary: 90000,
       note: ''
@@ -32,7 +32,7 @@ var lecturers = [
       education_name: 'Đại học Văn Lang',
       major_name: 'Công nghệ sinh học',
       subject_name: 'Toán, Lý, Hóa, Sinh',
-      class_name: ' Lớp 1, Lớp 2, Lớp 3, Lớp 4, Lớp 5, Lớp 6, Lớp 7, Lớp 8, Lớp 9, Lớp 10, Lớp 11, Dạy Trẻ Tự Kỷ, ',
+      class_name: 'Lớp 1, Lớp 2, Lớp 3, Lớp 4, Lớp 5',
       area: ' Quận 12, Tân Bình, Tân Phú, Bình Tân, Bình Chánh, Hóc Môn',
       salary: 900000,
       note: ''

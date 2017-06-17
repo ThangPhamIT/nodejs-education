@@ -43,12 +43,14 @@ nav .brand-logo {
 /*lecture*/
 .lect-green-border-item {
     border: 1px solid #93bd4f;
+    font-size: 14px;
 }
 
 .lect-green-border-item > .lect-info {
     display: flex;
     vertical-align: middle;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .lect-image {
@@ -59,11 +61,7 @@ nav .brand-logo {
     margin: 5px 0 0 -5px;
 }
 
-.lect-id{
-    color: #ed1c24;
-}
-
-.lect-info {
+.lect-info-text {
     color: #397704;
 }
 
