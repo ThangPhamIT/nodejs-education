@@ -22,3 +22,5 @@ route.get('/dich-vu-gia-su', controller.serviceLecturer.index);
 route.get('/dang-ky-tim-gia-su', controller.registerLecturer.index);
 route.post('/dang-ky-tim-gia-su', controller.registerLecturer.sendEmailToEducation);
 route.get('/gia-su-tieu-bieu', controller.lecturer.index);
+
+route.get('/tuyen-dung', controller.recruitment.index);

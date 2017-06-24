@@ -6,5 +6,6 @@ module.exports = {
     tuitionPrice: require('./TuitionPriceController'),
     registerLecturer: require('./RegisterLecturerController'),
     serviceLecturer: require('./ServiceLecturerController'),
-    lecturer: require('./LecturerController')
+    lecturer: require('./LecturerController'),
+    recruitment: require('./RecruitmentController')
 }

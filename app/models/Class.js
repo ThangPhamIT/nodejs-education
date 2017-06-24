@@ -1,49 +1,25 @@
-var classes = [
-    { id: 1,
-      subject_id: 1,
-      subject_name: 'Tiếng Pháp',
-      class_name: 'Lớp sơ cấp',
-      address: '123 Quang Trung, HCM',
-      salary: 2500000,
-      number_of_time: 3,
-      study_time: 'Sắp xếp',
-      require: 'Giáo viên Nam, Nữ',
-      contact: '0123456789',
-      status: 0,
-      is_part_time: 0
-    },
-    { id: 2, 
-      subject_id: 2,
-      subject_name: 'Toán',
-      class_name: 'Lớp 12',
-      address: '123 Quang Trung, HCM',
-      salary: 2500000,
-      number_of_time: 5,
-      study_time: 'Tối 2, 4, 6',
-      require: 'Giáo viên Nam, Nữ',
-      contact: '0123456789',
-      status: 1,
-      is_part_time: 0
-    },
-    { id: 3, 
-      subject_id: 3,
-      subject_name: 'Toán',
-      class_name: 'Lớp 9',
-      address: '123 Nguyễn Xí, Bình Thạnh, HCM',
-      salary: 2000000,
-      number_of_time: 2,
-      study_time: 'Tối 2, 4',
-      require: 'Giáo viên Nam',
-      contact: '0123456789',
-      status: 0,
-      is_part_time: 0
-    }
-];
+var db = require('./db');
 
 var Class = {
-    findAll: function () {
-        return classes;
-    }  
+    findAll: function (callback) {
+      db.query('select * from public."ClassInfo" ', [], 
+      function(err, result){
+          if (err) {
+            return console.error ('error running query', err);
+          }
+          console.log(JSON.stringify(result.rows));
+          callback(err, result.rows);
+      });
+    },
+
+    getClassById: function(id, callback){
+      console.log('class id: ' + id);
+      db.query('select * from public."ClassInfo" where id = $1', [id], 
+      function(err, result){
+          console.log(JSON.stringify(result.rows[0]));
+          callback(err, result.rows[0]);
+      })
+    }
 };
 
 module.exports = Class;

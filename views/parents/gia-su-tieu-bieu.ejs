@@ -17,21 +17,21 @@
                     <h6>PHỤ HUYNH</h6>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Lưu ý khi chọn gia sư cho con em</div>
+                    <div><i class="fa fa-dot-circle-o purple-text text-darken-3" aria-hidden="true"></i> Lưu ý khi chọn gia sư cho con em</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Tầm quan trọng của việc chọn đúng
+                    <div><i class="fa fa-dot-circle-o purple-text text-darken-3" aria-hidden="true"></i> Tầm quan trọng của việc chọn đúng
                         gia sư</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Những điều phụ huynh nên biết khi
+                    <div><i class="fa fa-dot-circle-o purple-text text-darken-3" aria-hidden="true"></i> Những điều phụ huynh nên biết khi
                         thuê gia sư</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Bồi dưỡng kiến thức cho con em</div>
+                    <div><i class="fa fa-dot-circle-o purple-text text-darken-3" aria-hidden="true"></i> Bồi dưỡng kiến thức cho con em</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons purple-text text-lighten-3">check_circle</i> Dạy kèm tại nhà</div>
+                    <div><i class="fa fa-dot-circle-o purple-text text-darken-3" aria-hidden="true"></i> Dạy kèm tại nhà</div>
                 </li>
             </ul>
             <ul class="collection with-header" id="home-page-content-support">
@@ -39,19 +39,14 @@
                     <h6>THÔNG TIN HỖ TRỢ</h6>
                 </li>
                 <li class="collection-item avatar">
-                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
-                    <span class="title home-support-title">0123456789</span>
-                    <p class="home-support-title">(Thang Pham)</p>
+                    <i class="material-icons circle indigo darken-3">phone</i>
+                    <span class="title home-support-title">0862.50.55.22</span>
+                    <p class="home-support-title">(Thầy Nam)</p>
                 </li>
                 <li class="collection-item avatar">
-                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
-                    <span class="title home-support-title">0123456789</span>
-                    <p class="home-support-title">(Thang Pham)</p>
-                </li>
-                <li class="collection-item avatar">
-                    <i class="material-icons circle red-text indigo lighten-3">phone</i>
-                    <span class="title home-support-title">0123456789</span>
-                    <p class="home-support-title">(Thang Pham)</p>
+                    <i class="material-icons circle indigo darken-3">phone</i>
+                    <span class="title home-support-title">0914.787.008</span>
+                    <p class="home-support-title">(Thầy Nam)</p>
                 </li>
             </ul>
         </div>
@@ -65,7 +60,12 @@
                         <div class="card lect-green-border-item">
                             <div class="row lect-info">
                                 <div class="col s3 m12 l3">
-                                    <img class="lect-image" src="<%= item.image %>">
+                                    <% if(item.image != ""){ %>
+                                        <img class="lect-image" src="<%= item.image %>">
+                                    <% } else { %>
+                                        <img class="lect-image" src="/images/no_image.png">
+                                    <% } %>
+                                    
                                 </div>
                                 <div class="col s9 m12 l9">
                                     Mã số: <strong class="red-text"> <%= item.id %> </strong> <br>
@@ -94,12 +94,12 @@
                                         </tr>
                                         <tr>
                                             <td>- Khu vực</td>
-                                            <td><%= item.area %></td>
+                                            <td><%= item.teaching_area %></td>
                                         </tr>
-                                        <tr>
+                                        <!--<tr>
                                             <td>- Mức lương</td>
                                             <td><strong class="red-text"><%= item.salary %></strong> đ/ buổi</td>
-                                        </tr>
+                                        </tr>-->
                                          <tr>
                                             <td>- Liên hệ</td>
                                             <td><strong class="red-text"><%= item.phone %></strong></td>
@@ -121,25 +121,25 @@
                     <h6>GIA SƯ CÁC MÔN</h6>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Toán</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Gia sư môn Toán</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Lý</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Gia sư môn Lý</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Hóa</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Gia sư môn Hóa</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Sinh</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Gia sư môn Sinh</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Anh</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Gia sư môn Anh</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Gia sư môn Văn</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Gia sư môn Văn</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Luyện thi Đại Học</div>
+                    <div><i class="fa fa-dot-circle-o orange-text text-darken-3" aria-hidden="true"></i> Luyện thi Đại Học</div>
                 </li>
             </ul>
 
@@ -148,25 +148,25 @@
                     <h6>TIN TỨC NỔI BẬT</h6>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Giáo viên muốn môn Toán 'học gì thi nấy,
+                    <div><i class="fa fa-dot-circle-o green-text text-darken-3" aria-hidden="true"></i> Giáo viên muốn môn Toán 'học gì thi nấy,
                         không đánh đố'</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Nữ sinh Việt đạt điểm tuyệt đối kỳ thi
+                    <div><i class="fa fa-dot-circle-o green-text text-darken-3" aria-hidden="true"></i> Nữ sinh Việt đạt điểm tuyệt đối kỳ thi
                         chuẩn hóa SAT</div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Nữ sinh được 8 trường danh tiếng mời nhập
+                    <div><i class="fa fa-dot-circle-o green-text text-darken-3" aria-hidden="true"></i> Nữ sinh được 8 trường danh tiếng mời nhập
                         học
                     </div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Nam sinh trường Luật đạt điểm TOEIC tuyệt
+                    <div><i class="fa fa-dot-circle-o green-text text-darken-3" aria-hidden="true"></i> Nam sinh trường Luật đạt điểm TOEIC tuyệt
                         đối
                     </div>
                 </li>
                 <li class="collection-item">
-                    <div><i class="material-icons orange-text text-lighten-3">info</i> Sử dụng chung hệ thống phần mềm quản lý
+                    <div><i class="fa fa-dot-circle-o green-text text-darken-3" aria-hidden="true"></i> Sử dụng chung hệ thống phần mềm quản lý
                         thi THPT quốc gia</div>
                 </li>
             </ul>
