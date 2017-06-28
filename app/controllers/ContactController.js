@@ -1,5 +1,6 @@
 var nodemailer = require('nodemailer');
 var token      = require('../../authorization/XOAuth2');
+var Contact = require('../models/Contact');
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -26,6 +27,17 @@ var contactController = {
         var phone = req.body.phone;
         var message = req.body.message;
         
+        // save contact into db
+        Contact.createContact({
+            full_name: full_name,
+            address: address,
+            phone: phone,
+            email: email,
+            message: message
+        }, function(err){
+
+        });
+
         var mailOptions = {
             from: full_name + '<' + email + '>',
             to: 'thangpham.it92@gmail.com',

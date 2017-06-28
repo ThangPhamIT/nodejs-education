@@ -13,7 +13,6 @@ var Class = {
     },
 
     getClassById: function(id, callback){
-      console.log('class id: ' + id);
       db.query('select * from public."ClassInfo" where id = $1', [id], 
       function(err, result){
           console.log(JSON.stringify(result.rows[0]));
