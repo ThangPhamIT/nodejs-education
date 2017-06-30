@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-image">
                     <img src="images/contact.jpg" border="0">
-                    <span class="card-title">ĐĂNG KÝ TÌM GIA SƯ</span>
+                    <span class="card-title">ĐĂNG KÝ LÀM GIA SƯ</span>
                 </div>
             </div>
         </div>
@@ -13,8 +13,8 @@
     <div class="container register-lecturers-content">
         <div class="col s2 m3 l3"></div>
         <div class="col s8 m6 l6">
-            <p>Quý phụ huynh vui lòng điền đầy đủ thông tin cần liên hệ. Trung tâm <span class="red-text text-darken-4">TƯ VẤN DU HỌC ĐẠI HẢI</span> sẽ liên lạc cho quý phụ huynh.</p>
-            <form action="dang-ky-tim-gia-su" method="POST">
+            <p>Giảng viên, sinh viên muốn đăng ký làm gia sư, vui lòng điền đầy đủ thông tin. Trung tâm <span class="red-text text-darken-4">TƯ VẤN DU HỌC ĐẠI HẢI</span>                sẽ liên lạc lại sau.</p>
+            <form action="dang-ky-lam-gia-su" method="POST">
                 <div class="row none-margin-bottom">
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">account_circle</i>
@@ -39,22 +39,67 @@
                         <label for="email" data-error="Vui lòng nhập đúng định dạng email">Email</label>
                     </div>
                 </div>
-                <div class="row none-margin-bottom">
+                <!--<div class="row none-margin-bottom">
                     <div class="input-field col s12 m6 l6">
-                        <i class="material-icons prefix">album</i>
-                        <input id="subject" name="subject" type="text">
-                        <label for="subject">Môn học</label>
+                        <i class="material-icons prefix">date_range</i>
+                        <input id="dob" name="dob" type="date" class="datepicker">
                     </div>
                     <div class="input-field col s12 m6 l6">
-                        <i class="material-icons prefix">featured_play_list</i>
-                        <input id="number_student" name="number_student" type="number" class="validate" pattern="[0-9, ]*">
-                        <label for="number_student">Số lượng học sinh</label>
+                        <i class="material-icons prefix">location_on</i>
+                        <input id="dob" name="dob" type="date" class="datepicker">
+                    </div>
+                </div>-->
+                <div class="row none-margin-bottom">
+                    <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">home</i>
+                        <input class="validate" id="education_name" name="education_name" type="text">
+                        <label for="education_name">Trường đào tạo</label>
+                    </div>
+                    <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">view_quilt</i>
+                        <input class="validate" id="major_name" name="major_name" type="text">
+                        <label for="major_name">Chuyên ngành</label>
+                    </div>
+                </div>
+                <div class="row none-margin-bottom">
+                    <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">account_box</i>
+                        <input class="validate" id="account_name" name="account_name" type="text">
+                        <label for="account_name">Đăng ký tài khoản</label>
+                    </div>
+                    <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">group_work</i>
+                        <input class="validate" id="password" name="password" type="password">
+                        <label for="password">Mật khẩu</label>
+                    </div>
+                </div>
+                <div class="row none-margin-bottom">
+                    <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">adjust</i>
+                        <select id="level_degree" name="level_degree">
+                            <option value="" disabled selected>Hiện là</option>
+                            <option value="Thạc sĩ">Thạc sĩ</option>
+                            <option value="Kỹ sư">Kỹ sư</option>
+                            <option value="Cử nhân">Cử nhân</option>
+                            <option value="Giảng viên">Giảng viên</option>
+                            <option value="Giáo viên">Giáo viên</option>
+                            <option value="Sinh viên">Sinh viên</option>
+                        </select>
+                    </div>
+                    <div class="input-field col s12 m6 l6">
+                        <i class="material-icons prefix">location_on</i>
+                        <select id="teaching_area" name="teaching_area" multiple>
+                            <option value="" disabled selected>Khu vực dạy</option>
+                            <option value="Quận 12">Quận 12</option>
+                            <option value="Gò Vấp">Gò Vấp</option>
+                            <option value="Tân Bình">Tân Bình</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row none-margin-bottom">
                     <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix">class</i>
-                        <select id="option_class" name="option_class" multiple>
+                        <select id="class_name" name="class_name" multiple>
                             <option value="" disabled selected>Chọn lớp</option>
                             <option value="1">Lớp 1</option>
                             <option value="2">Lớp 2</option>
@@ -86,13 +131,13 @@
                 <div class="row none-margin-bottom">
                     <div class="input-field col s12 m12 l12">
                         <i class="material-icons prefix">mode_edit</i>
-                        <textarea id="message" name="message" class="materialize-textarea"></textarea>
-                        <label for="message">Yêu cầu khác</label>
+                        <textarea id="note" name="note" class="materialize-textarea"></textarea>
+                        <label for="note">Yêu cầu khác</label>
                     </div>
                 </div>
                 <p>
                     <button class="btn waves-effect waves-light right" type="submit" name="action">
-                        GỞI THÔNG TIN
+                        ĐĂNG KÝ
                     </button>
                 </p>
             </form>

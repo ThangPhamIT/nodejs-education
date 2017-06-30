@@ -16,6 +16,9 @@ route.get('/lop-moi/:id', controller.newClass.detailClass);
 route.get('/lien-he', controller.contact.index);
 route.post('/lien-he', controller.contact.sendEmailToEducation)
 
+route.get('/dang-ky-lam-gia-su', controller.lecturer.registerDoLecturer);
+route.post('/dang-ky-lam-gia-su', controller.lecturer.createLecturer);
+
 route.get('/hoc-phi-tham-khao', controller.tuitionPrice.index);
 route.get('/phu-huynh-can-biet', controller.parentKnow.index);
 route.get('/dich-vu-gia-su', controller.serviceLecturer.index);
