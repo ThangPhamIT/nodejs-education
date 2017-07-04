@@ -27,17 +27,6 @@ var contactController = {
         var phone = req.body.phone;
         var message = req.body.message;
         
-        // save contact into db
-        Contact.createContact({
-            full_name: full_name,
-            address: address,
-            phone: phone,
-            email: email,
-            message: message
-        }, function(err){
-
-        });
-
         var mailOptions = {
             from: full_name + '<' + email + '>',
             to: 'thangpham.it92@gmail.com',
@@ -71,6 +60,15 @@ var contactController = {
                     }
                 });
             } else {
+                // save contact into db
+                Contact.createContact({
+                    full_name: full_name,
+                    address: address,
+                    phone: phone,
+                    email: email,
+                    message: message
+                }, function(err){
+                });
                 res.render('modals/lien-he-modal', {
                     flash: {
                         type: 'success',
