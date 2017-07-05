@@ -60,6 +60,10 @@ nav .brand-logo {
     height: 255px !important;
 }
 
+.auto .carousel {
+    height: 420px !important;
+}
+
 /********************************** parents **********************************/
 /*lecture*/
 .lect-green-border-item {

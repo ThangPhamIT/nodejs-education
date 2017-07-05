@@ -24,12 +24,12 @@ var lecturerController = {
         });
     },
 
-    registerDoLecturer: function (req, res) {
+    indexRegisterDoLecturer: function (req, res) {
         res.render('lecturer/dang-ky-lam-gia-su', {
         });
     },
 
-    createLecturer: function (req, res) {
+    registerDoLecturer: function (req, res) {
         var full_name = req.body.full_name;
         var address = req.body.address;
         var phone = req.body.phone;
@@ -103,23 +103,23 @@ var lecturerController = {
                 });
             } else {
                 // save lecturer into db
-                Lecturer.createLecturer({
-                    full_name: full_name,
-                    address: address,
-                    phone: phone,
-                    email: email,
-                    education_name: education_name,
-                    major_name: major_name,
-                    account_name: account_name,
-                    password: password,
-                    level_degree: level_degree,
-                    teaching_area: teaching_area_str,
-                    class_name: class_name_str,
-                    number_of_time: number_of_time,
-                    subject_name: subject_name,
-                    note: note
-                }, function (err) {
-                });
+                // Lecturer.createLecturer({
+                //     full_name: full_name,
+                //     address: address,
+                //     phone: phone,
+                //     email: email,
+                //     education_name: education_name,
+                //     major_name: major_name,
+                //     account_name: account_name,
+                //     password: password,
+                //     level_degree: level_degree,
+                //     teaching_area: teaching_area_str,
+                //     class_name: class_name_str,
+                //     number_of_time: number_of_time,
+                //     subject_name: subject_name,
+                //     note: note
+                // }, function (err) {
+                // });
                 res.render('modals/lien-he-modal', {
                     flash: {
                         type: 'success',
@@ -131,6 +131,10 @@ var lecturerController = {
                 });
             }
         });
+    },
+
+    processReceiverClass: function(eeq, res) {
+        res.render('lecturer/quy-trinh-nhan-lop', {});
     }
 };
 

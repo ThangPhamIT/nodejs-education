@@ -13,12 +13,20 @@ $(document).ready(function () {
   });
 
 
-  $('.carousel.carousel-slider').carousel({ fullWidth: true });
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
 
   $('.datepicker').pickadate({
     selectMonths: true,
     selectYears: 10,
     format: 'dd/mm/yyyy'
   });
+
+  $(".auto .carousel").jCarouselLite({
+      auto: 2000,
+      speed: 2000,
+      vertical: true
+    });
 
 });
