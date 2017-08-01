@@ -1,31 +1,30 @@
-// require express
-var express = require('express');
-var path    = require('path');
-
+var express         = require('express');
 // create our route object
 var route = express.Router();
-
 //export our router
 module.exports = route;
 
-// route for our homepage
-route.get('/', function(req, res) {
-    res.render('pages/index', {user:"Thang Pham"}); 
-    //<%= user%>
-});
+// controllers
+var controller = require('./controllers/index');
 
-route.get('/about', function(req, res) {
-    res.render('pages/about');
-});
+// route
+route.get('/', controller.home.index);
 
-route.get('/contact', function(req, res) {
-    res.render('pages/contact');
-});
+route.get('/lop-moi', controller.newClass.index);
+route.get('/lop-moi/:id', controller.newClass.detailClass);
 
-route.get('/portfolio', function(req, res) {
-    res.render('pages/portfolio');
-});
+route.get('/lien-he', controller.contact.index);
+route.post('/lien-he', controller.contact.sendEmailToEducation)
 
-route.get('/portfolio-page', function(req, res) {
-    res.render('pages/portfolio-page');
-});
+route.get('/dang-ky-lam-gia-su', controller.lecturer.indexRegisterDoLecturer);
+route.post('/dang-ky-lam-gia-su', controller.lecturer.registerDoLecturer);
+route.get('/quy-trinh-nhan-lop', controller.lecturer.processReceiverClass);
+
+route.get('/dang-ky-tim-gia-su', controller.registerLecturer.index);
+route.post('/dang-ky-tim-gia-su', controller.registerLecturer.sendEmailToEducation);
+route.get('/hoc-phi-tham-khao', controller.tuitionPrice.index);
+route.get('/phu-huynh-can-biet', controller.parentKnow.index);
+route.get('/dich-vu-gia-su', controller.serviceLecturer.index);
+route.get('/gia-su-tieu-bieu', controller.lecturer.index);
+
+route.get('/tuyen-dung', controller.recruitment.index);

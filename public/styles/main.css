@@ -1,230 +1,168 @@
-img {
-  max-width: 100%;
+/********************************** menu **********************************/
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 20px;
+    letter-spacing: .02em;
+    font-weight: 400;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding: 0px 10px 0px;
 }
 
-.site-header {
-  position: relative;
+#dropdown-parents, #dropdown-lecturers, #dropdown-adminitrator {
+    width: 240px !important;
 }
 
-.site-header .mdl-layout__header-row {
-  padding: 0;
-  -ms-flex-pack: center;
-  justify-content: center;
+#dropdown-parents > li > a, #dropdown-lecturers > li > a, #dropdown-adminitrator > li > a {
+    color: #fff !important;
 }
 
-.site-description {
-  display: block;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 10px;
+#dropdown-parents > li > a:hover, #dropdown-lecturers > li > a:hover, #dropdown-adminitrator > li > a:hover {
+    background-color: #303f9f  !important;
 }
 
-.is-compact .mdl-layout__title span {
-  display: none;
+.none-margin-bottom {
+    margin-bottom: 0px !important;
 }
 
-.site-logo-row {
-  min-height: 200px;
+/********************************** home page **********************************/
+.card-introdution-title {
+    color: rgba(0,0,0,.54) !important;
+    font-size: 1rem;
+    line-height: 18px;
+    overflow: hidden;
+    padding: 16px;
+    width: 90%;
 }
 
-.is-compact .site-logo-row {
-  min-height: auto;
+.mdl-card-supporting-text-recruits {
+    font-size: 16px;
+    line-height: 30px;
 }
 
-.site-logo {
-  background: url(../images/site-logo.png) 50% no-repeat;
-  background-size: cover;
-  height: 120px;
-  width: 120px;
-  margin: 15px auto;
+#home-page-content .collection.with-header .collection-item {
+    padding-left: 10px !important;
 }
 
-.is-compact .site-logo {
-  height: 50px;
-  width: 50px;
-  margin: 7px auto;
+#home-page-content-support .collection-item .home-support-title{
+    padding-left: 60px !important;
 }
 
-.site-navigation-row {
-  background-color: rgba(0, 0, 0, 0.08);
-  text-transform: uppercase;
-  height: 50px;
+#home-height-carousel-video {
+    height: 255px !important;
+    background-color: #616161;
 }
 
-.site-navigation-row .mdl-navigation {
-  text-align: center;
-  max-width: 900px;
-  width: 100%;
+#home-height-carousel {
+    height: 255px !important;
 }
 
-.site-navigation-row .mdl-navigation__link {
-  -ms-flex: 1;
-  flex: 1;
-  line-height: 42px;
-  color: #fff;
+.auto .carousel {
+    height: 420px !important;
 }
 
-.site-navigation-row .is-active {
-  position: relative;
-  font-weight: bold;
-  opacity: 1;
+/********************************** parents **********************************/
+/*lecture*/
+.lect-green-border-item {
+    border: 1px solid #93bd4f;
+    font-size: 14px;
 }
 
-.site-navigation-row .mdl-navigation__link:hover {
-  opacity: 1;
+.lect-green-border-item > .lect-info {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 0px;
 }
 
-.mdl-layout__header .mdl-layout__drawer-button {
-  color: #fff;
+.lect-image {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    border: 1px solid #93bd4f; 
+    margin: 5px 0 0 -5px;
 }
 
-.mdl-layout__content {
-  background-color: #fefefe;
+.lect-info-text {
+    color: #397704;
 }
 
-.site-content {
-  margin: 1em auto;
-  min-height: 580px;
+.detail-class-table tbody tr td {
+    padding: 3px 0px;
 }
 
-.page-content {
-  padding-bottom: 2em;
+/********************************** new class **********************************/
+.bg-item-new-class {
+    background-image: url('../images/background1.jpg') no-repeat cover center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
 }
 
-.site-max-width {
-  max-width: 100%;
-  margin: auto;
+.green-boder-item {
+    border: 1px solid #93bd4f;
 }
 
-.site-copy {
-  max-width: 700px;
+/********************************** tuition page **********************************/
+.tuition-price-table-1 thead th, .tuition-price-table-1 tbody tr td {
+    border: 1px #004d40 solid;
+    padding: 10px 5px;
 }
 
-.welcome-card > .mdl-card__title {
-  color: #fff;
-  height: 290px;
-  background: url("../images/cover.jpg") center/cover;
+.tuition-price-table-2 thead th, .tuition-price-table-2 tbody tr td {
+    border: 1px #bf360c solid;
+    padding: 10px 5px;
 }
 
-.event-card {
-  background: #3E4EB8;
+/********************************** footer **********************************/
+.page-footer {
+    background-color: #3949ab !important;
 }
 
-.event-card .mdl-card__actions {
-  border-color: rgba(255, 255, 255, 0.2);
-}
+/********************************** calendar **********************************/
 
-.event-card .mdl-card__title {
-  -ms-flex-align: start;
-      align-items: flex-start;
-}
+.c-btn {
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: 600;
+      display: inline-block;
+      line-height: 36px;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      min-width: 88px;
+      height: 36px;
+      margin: 10px 8px;
+      padding: 0 8px;
+      text-align: center;
+      letter-spacing: .5px;
+      border-radius: 2px;
+      background: #F1F1F1;
+      color: #393939;
+      transition: background 200ms ease-in-out;
+      box-shadow: 0 3.08696px 5.82609px 0 rgba(0, 0, 0, 0.16174), 0 3.65217px 12.91304px 0 rgba(0, 0, 0, 0.12435);
+    }
 
-.event-card .mdl-card__title > h4 {
-  margin-top: 0;
-}
+    .c-btn--flat {
+      background: transparent;
+      margin: 10px 8px;
+      min-width: 52px;
+    }
 
-.event-card .mdl-card__actions {
-  display: -ms-flexbox;
-  display: flex;
-  box-sizing: border-box;
-  -ms-flex-align: center;
-      align-items: center;
-}
+    .c-btn:hover {
+      background: rgba(153, 153, 153, 0.2);
+      color: #393939;
+    }
 
-.event-card .mdl-card__actions > .material-icons {
-  padding-right: 10px;
-}
+    .c-btn:active {
+      box-shadow: 0 9.6087px 10.78261px 0 rgba(0, 0, 0, 0.17217), 0 13.56522px 30.3913px 0 rgba(0, 0, 0, 0.15043);
+    }
 
-.event-card .mdl-card__title,
-.event-card .mdl-card__actions,
-.event-card .mdl-card__actions > .mdl-button {
-  color: #fff;
-}
-
-.section__play-btn {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 150px;
-}
-
-.section__play-btn .material-icons {
-  font-size: 3rem;
-}
-
-.section--center {
-  margin: 0 auto 2rem;
-}
-
-.homepage-portfolio .mdl-button {
-  margin: 0 auto;
-}
-
-.homepage-footer {
-  background: #eee;
-  margin-bottom: -1em;
-  padding: 2rem 0;
-}
-
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
-}
-
-img.article-image {
-  width: 100%;
-  height: auto;
-}
-
-.demo-card-image.mdl-card {
-  width: 192px;
-  height: 192px;
-}
-
-.person1 {
-  background: url("../images/person1.jpg") center/cover;
-}
-
-.person2 {
-  background: url("../images/person2.jpg") center/cover;
-}
-
-.demo-card-image > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.demo-card-image__filename {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.form-contact .mdl-textfield {
-  width: 100%;
-}
-
-#contact-button {
-  position: fixed;
-  display: block;
-  right: 0;
-  bottom: 0;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  z-index: 900;
-}
-
-footer .mdl-logo a {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px dotted #aaa;
-}
-
-.footer-container {
-  margin: 0 auto;
-}
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3N0eWxlcy9tYWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR0E7RUFDRSxnQkFBZTtDQUNoQjs7QUFJRDtFQUNFLG1CQUFrQjtDQUNuQjs7QUFFRDtFQUNFLFdBQVU7RUFFTixzQkFBcUI7RUFDakIsd0JBQXVCO0NBQ2hDOztBQUVEO0VBQ0UsZUFBYztFQUNkLGdCQUFlO0VBQ2YsbUJBQWtCO0VBQ2xCLGlCQUFnQjtFQUNoQixvQkFBbUI7Q0FDcEI7O0FBR0Q7RUFDRSxjQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxrQkFBaUI7Q0FDbEI7O0FBR0Q7RUFDRSxpQkFBZ0I7Q0FDakI7O0FBR0Q7RUFDRSxvREFBbUQ7RUFDbkQsdUJBQXNCO0VBQ3RCLGNBQWE7RUFDYixhQUFZO0VBQ1osa0JBQWlCO0NBQ2xCOztBQUVEO0VBQ0UsYUFBWTtFQUNaLFlBQVc7RUFDWCxpQkFBZ0I7Q0FDakI7O0FBR0Q7RUFDRSxzQ0FBcUM7RUFDckMsMEJBQXlCO0VBQ3pCLGFBQVk7Q0EwQmI7O0FBN0JEO0VBTUksbUJBQWtCO0VBQ2xCLGlCQUFnQjtFQUNoQixZQUFXO0NBQ1o7O0FBVEg7RUFhUSxZQUFXO0VBQ1AsUUFBTztFQUNmLGtCQUFpQjtFQUNYLFlBQVc7Q0FDbEI7O0FBakJIO0VBb0JJLG1CQUFrQjtFQUNsQixrQkFBaUI7RUFDakIsV0FBVTtDQUNYOztBQXZCSDtFQTBCSSxXQUFVO0NBQ1g7O0FBSUg7RUFDRSxZQUFXO0NBQ1o7O0FBRUQ7RUFDRSwwQkFBeUI7Q0FDMUI7O0FBS0Q7RUFDRSxpQkFBZ0I7RUFDaEIsa0JBQWlCO0NBQ2xCOztBQUVEO0VBQ0Usb0JBQW1CO0NBQ3BCOztBQUVEO0VBQ0UsaUJBQWdCO0VBQ2hCLGFBQVk7Q0FDYjs7QUFFRDtFQUNFLGlCQUFnQjtDQUNqQjs7QUFJRDtFQUNFLFlBQVc7RUFDWCxjQUFhO0VBQ2IsaURBQWtEO0NBQ25EOztBQUVEO0VBQ0Usb0JBQW1CO0NBNkJwQjs7QUE5QkQ7RUFJSSx1Q0FBc0M7Q0FDdkM7O0FBTEg7RUFRSSxzQkFBdUI7TUFBdkIsd0JBQXVCO0NBQ3hCOztBQVRIO0VBWUksY0FBYTtDQUNkOztBQWJIO0VBZ0JJLHFCQUFhO0VBQWIsY0FBYTtFQUNiLHVCQUFxQjtFQUNyQix1QkFBbUI7TUFBbkIsb0JBQW1CO0NBQ3BCOztBQW5CSDtFQXNCSSxvQkFBbUI7Q0FDcEI7O0FBdkJIOzs7RUE0QkksWUFBVztDQUNaOztBQUdIO0VBRUUscUJBQW9CO0VBQ3BCLGNBQWE7RUFFYix1QkFBc0I7RUFDdEIsb0JBQW1CO0VBRW5CLHNCQUFxQjtFQUNyQix3QkFBdUI7RUFDdkIsa0JBQWlCO0NBS2xCOztBQWZEO0VBYUksZ0JBQWU7Q0FDaEI7O0FBR0g7RUFDRSxvQkFBbUI7Q0FDcEI7O0FBRUQ7RUFDRSxlQUFjO0NBQ2Y7O0FBRUQ7RUFDRSxpQkFBZ0I7RUFDaEIsb0JBQW1CO0VBQ25CLGdCQUFlO0NBQ2hCOztBQUdEO0VBQ0Usa0JBQWlCO0NBQ2xCOztBQUVEO0VBQ0UsWUFBVztFQUNYLGFBQVk7Q0FDYjs7QUFJRDtFQUNFLGFBQVk7RUFDWixjQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxtREFBb0Q7Q0FDckQ7O0FBR0Q7RUFDRSxtREFBb0Q7Q0FDckQ7O0FBRUQ7RUFDRSxhQUFZO0VBQ1osY0FBYTtFQUNiLCtCQUE4QjtDQUMvQjs7QUFFRDtFQUNFLFlBQVc7RUFDWCxnQkFBZTtFQUNmLGlCQUFnQjtDQUNqQjs7QUFJRDtFQUNFLFlBQVc7Q0FDWjs7QUFFRDtFQUNFLGdCQUFlO0VBQ2YsZUFBYztFQUNkLFNBQVE7RUFDUixVQUFTO0VBQ1QsbUJBQWtCO0VBQ2xCLG9CQUFtQjtFQUNuQixhQUFZO0NBQ2I7O0FBSUQ7RUFFSSxZQUFXO0VBQ1gsc0JBQXFCO0VBQ3JCLCtCQUE4QjtDQUMvQjs7QUFFSDtFQUNFLGVBQWM7Q0FDZiIsImZpbGUiOiJtYWluLmNzcyJ9 */
+    .c-btn--flat, .c-btn--flat:hover, .c-btn--flat:active {
+      box-shadow: none;
+    }
